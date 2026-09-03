@@ -1,12 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MeroBill — Your product's paper trail, digitized</title>
+<meta name="description" content="MeroBill stores your bills, warranties and repair history in one place, links them to your product with a QR seal, and lets buyers verify a product before they pay for it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Hello, Asmit</h2>
-    <p>This is a simple HTML page.</p>
+
+<div class="topband">Kathmandu's digital product passport &nbsp;·&nbsp; currently in early access</div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="wordmark" href="#top">
+      <span class="wordmark-mark">म</span>
+      <span class="wordmark-text">MeroBill</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#problem">The problem</a>
+      <a href="#how">How it works</a>
+      <a href="#verify">Verify a product</a>
+      <a href="#features">Features</a>
+    </nav>
+    <a class="btn btn-small btn-primary" href="#join">Join early access</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>Every bill you own, kept safer than the drawer it's in.</h1>
+        <p class="hero-lede">MeroBill stores your purchase bills and warranty cards, reminds you before they expire, and lets you hand off the full history the moment you sell the product — no faded paper required.</p>
+        <div class="hero-actions">
+          <a href="#join" class="btn btn-primary">Store your first bill</a>
+          <a href="#verify" class="btn btn-secondary">See how verification works</a>
+        </div>
+        <p class="hero-note">Free while in early access &nbsp;·&nbsp; no app install needed to verify a product</p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="bill-card">
+          <div class="bill-card-perf"></div>
+          <div class="bill-card-head">
+            <span class="bill-card-label">Digital record</span>
+            <span class="bill-card-id">MB-7734-KTM</span>
+          </div>
+          <h3 class="bill-card-product">Samsung Galaxy A54, 128GB</h3>
+          <dl class="bill-card-rows">
+            <div><dt>Purchased</dt><dd>Ktm Plaza · 12 Jan 2025</dd></div>
+            <div><dt>Warranty</dt><dd>Valid until 12 Jan 2027</dd></div>
+            <div><dt>Repairs logged</dt><dd>1 · screen protector, Mar 2025</dd></div>
+            <div><dt>Owners</dt><dd>1 (original)</dd></div>
+          </dl>
+          <div class="bill-card-foot">
+            <div class="qr" role="img" aria-label="QR code linking to this product record"></div>
+            <div class="stamp">verified<br>original</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section id="problem" class="problem">
+    <div class="wrap">
+      <h2>Paper wasn't built to last as long as your appliances</h2>
+      <p class="section-lede">A fridge is meant to run for a decade. The receipt that proves you own it is lucky to survive a monsoon.</p>
+
+      <div class="receipt-strip">
+        <article class="tear-item">
+          <h3>Bills get lost or fade</h3>
+          <p>Thermal-printed receipts fade within months. Warranty cards get misplaced in a move. When the product breaks, the proof of purchase is often gone first.</p>
+        </article>
+        <article class="tear-item">
+          <h3>Expiry dates go untracked</h3>
+          <p>Nobody remembers a warranty window written in fine print two years ago — until the repair bill lands and the coverage has already lapsed.</p>
+        </article>
+        <article class="tear-item">
+          <h3>Second-hand buyers are flying blind</h3>
+          <p>Buying a used laptop or appliance in Kathmandu usually means trusting the seller's word on age, repairs and warranty — with no way to check any of it.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="how">
+    <div class="wrap">
+      <h2>From receipt to record, in one scan</h2>
+      <p class="section-lede">One flow, from the day you buy something to the day you pass it on.</p>
+
+      <ol class="ledger">
+        <li class="ledger-row">
+          <span class="ledger-num">01</span>
+          <div class="ledger-body">
+            <h3>Store the bill</h3>
+            <p>Photograph or upload the purchase bill and warranty card right after you buy. MeroBill reads the product, date and warranty terms automatically.</p>
+          </div>
+        </li>
+        <li class="ledger-row">
+          <span class="ledger-num">02</span>
+          <div class="ledger-body">
+            <h3>Get a QR seal for the product</h3>
+            <p>A printable QR seal links the physical item to its digital record, so anyone who scans it lands on the verified history — not just your say-so.</p>
+          </div>
+        </li>
+        <li class="ledger-row">
+          <span class="ledger-num">03</span>
+          <div class="ledger-body">
+            <h3>Track warranty, get reminded</h3>
+            <p>MeroBill watches the expiry date and nudges you before coverage runs out, with enough time to actually use it.</p>
+          </div>
+        </li>
+        <li class="ledger-row">
+          <span class="ledger-num">04</span>
+          <div class="ledger-body">
+            <h3>Log every repair</h3>
+            <p>Each service visit — date, technician, what was fixed — gets added to the same record, building a servicing history instead of a pile of loose slips.</p>
+          </div>
+        </li>
+        <li class="ledger-row">
+          <span class="ledger-num">05</span>
+          <div class="ledger-body">
+            <h3>Transfer ownership when you sell</h3>
+            <p>Selling the product hands the entire record — bill, warranty, repairs — to the new owner in one confirmed transfer. No re-typing, no lost history.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- VERIFY -->
+  <section id="verify" class="verify">
+    <div class="wrap verify-grid">
+      <div class="verify-copy">
+        <h2>Buying second-hand? Scan before you pay.</h2>
+        <p class="section-lede">Instead of taking a seller's word for it, scan the product's QR seal and see its actual paper trail — purchase date, warranty status, repair count and how many hands it's passed through.</p>
+        <ul class="check-list">
+          <li>Confirms the bill is genuine, not just a claim</li>
+          <li>Shows remaining warranty at a glance</li>
+          <li>Surfaces the full repair history, not just what the seller mentions</li>
+          <li>Flags how many previous owners the product has had</li>
+        </ul>
+        <a href="#join" class="btn btn-secondary">Try a sample scan</a>
+      </div>
+
+      <div class="verify-visual" aria-hidden="true">
+        <div class="scan-card">
+          <div class="scan-card-head">
+            <div class="qr qr-small"></div>
+            <div>
+              <p class="scan-scanning">Scanning seal MB-7734-KTM…</p>
+              <p class="scan-found">Record found</p>
+            </div>
+          </div>
+          <dl class="scan-rows">
+            <div><dt>Original purchase</dt><dd class="ok">Verified · 12 Jan 2025</dd></div>
+            <div><dt>Warranty</dt><dd class="ok">8 months remaining</dd></div>
+            <div><dt>Repairs on file</dt><dd>1 minor repair</dd></div>
+            <div><dt>Ownership</dt><dd>1 transfer on record</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="features">
+    <div class="wrap">
+      <h2>Everything the drawer full of receipts was trying to do</h2>
+
+      <div class="feature-list">
+        <div class="feature-row">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M10 6h20v28l-4-3-4 3-4-3-4 3-4-3V6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 14h12M14 20h12M14 26h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <div class="feature-text">
+            <h3>Secure digitized bills</h3>
+            <p>Purchase records and warranty cards are stored securely and stay legible long after the paper original would have faded.</p>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.6"/><path d="M20 12v8l6 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="feature-text">
+            <h3>Warranty tracking &amp; reminders</h3>
+            <p>MeroBill tracks every warranty window and sends a reminder while there's still time to file a claim.</p>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="6" width="10" height="10" stroke="currentColor" stroke-width="1.6"/><rect x="24" y="6" width="10" height="10" stroke="currentColor" stroke-width="1.6"/><rect x="6" y="24" width="10" height="10" stroke="currentColor" stroke-width="1.6"/><path d="M26 26h3v3h-3zM32 26h2v2h-2zM26 32h2v2h-2zM30 30h4v4h-4z" fill="currentColor"/></svg>
+          </div>
+          <div class="feature-text">
+            <h3>QR seals for physical products</h3>
+            <p>A printable, tamper-evident QR seal ties the physical item to its digital record — no separate app needed to check it.</p>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M13 27 27 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M22 10h8v8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 30h-8v-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="feature-text">
+            <h3>Repair &amp; service history</h3>
+            <p>Every service visit gets logged against the product, so its condition is documented, not just claimed by whoever's selling it.</p>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M8 14h18M8 14l5-5M8 14l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 26H14M32 26l-5-5M32 26l-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="feature-text">
+            <h3>Secure ownership transfer</h3>
+            <p>Selling a product moves its full digital record to the new owner in one confirmed step, with the transfer itself kept on file.</p>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 6 8 11v9c0 8 5.4 13.6 12 15 6.6-1.4 12-7 12-15v-9L20 6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M15 20l4 4 8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="feature-text">
+            <h3>Pre-purchase verification</h3>
+            <p>Anyone considering a second-hand product can check its purchase, warranty and ownership history before handing over money.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="join" class="cta">
+    <div class="wrap cta-inner">
+      <div class="cta-copy">
+        <h2>Give your next purchase a record that outlasts the receipt.</h2>
+        <p>Join early access and start with the bill that's sitting in your bag right now.</p>
+      </div>
+      <form class="cta-form" onsubmit="return false;">
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" type="email" placeholder="you@example.com" required>
+        <button type="submit" class="btn btn-primary">Get early access</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <a class="wordmark wordmark-footer" href="#top">
+      <span class="wordmark-mark">म</span>
+      <span class="wordmark-text">MeroBill</span>
+    </a>
+    <p class="footer-tag">A digital product passport for bills, warranties and ownership — built for Kathmandu's second-hand market.</p>
+    <p class="footer-copy">© 2026 MeroBill. Your bill, kept.</p>
+  </div>
+</footer>
+
 </body>
 </html>
