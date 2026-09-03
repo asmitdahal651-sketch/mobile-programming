@@ -2,17 +2,23 @@
    MeroBill — tokens
 --------------------------------------------------- */
 :root{
-  --ink:        #16233A;   /* deep ledger-navy, primary text & surfaces */
-  --ink-soft:   #2C3B54;
-  --paper:      #F4EFE0;   /* aged paper cream, page background */
-  --paper-deep: #EAE2CB;   /* slightly deeper paper for cards */
-  --line:       #D7CBA8;   /* hairline rule on paper */
-  --stamp:      #A5392A;   /* rubber-stamp red */
-  --stamp-deep: #832C20;
-  --verified:   #2F5D45;   /* verified-green */
-  --muted:      #6B6455;
-  --muted-on-ink: #B9C2D6;
-  --white:      #FFFDF7;
+  --ink:        #123244;   /* deep blue-charcoal, primary text & dark surfaces */
+  --ink-soft:   #33566A;
+  --paper:      #FFFDF8;   /* clean warm-white, page background */
+  --paper-deep: #FFF2D6;   /* light yellow tint, alternating sections */
+  --line:       #E8DBB4;   /* hairline rule on warm-white */
+  --stamp:      #FF7F50;   /* coral — primary accent */
+  --stamp-deep: #E8663A;
+  --verified:   #04A97D;   /* teal — verified/success */
+  --muted:      #5F7B87;
+  --muted-on-ink: #BFE0EC;
+  --white:      #FFFFFF;
+
+  --yellow:     #FFD166;
+  --yellow-deep:#F2B93D;
+  --teal:       #06D6A0;
+  --blue:       #118AB2;
+  --blue-deep:  #0C6E8D;
 
   --font-display: "Fraunces", serif;
   --font-body: "IBM Plex Sans", sans-serif;
@@ -85,10 +91,11 @@ a{ color: inherit; }
 }
 .btn-primary{
   background: var(--stamp);
-  color: var(--white);
+  color: var(--ink);
 }
 .btn-primary:hover{
   background: var(--stamp-deep);
+  color: var(--white);
   transform: translateY(-1px);
 }
 .btn-secondary{
@@ -106,10 +113,23 @@ a{ color: inherit; }
 }
 
 /* ---------------------------------------------------
+   Palette strip — echoes the brand swatch
+--------------------------------------------------- */
+.palette-strip{
+  display: flex;
+  height: 5px;
+}
+.palette-strip span{ flex: 1; }
+.palette-strip span:nth-child(1){ background: var(--stamp); }
+.palette-strip span:nth-child(2){ background: var(--yellow); }
+.palette-strip span:nth-child(3){ background: var(--teal); }
+.palette-strip span:nth-child(4){ background: var(--blue); }
+
+/* ---------------------------------------------------
    Top utility band
 --------------------------------------------------- */
 .topband{
-  background: var(--ink);
+  background: var(--blue-deep);
   color: var(--muted-on-ink);
   text-align: center;
   font-family: var(--font-mono);
@@ -306,8 +326,8 @@ section{ padding: 88px 0; }
   width: 84px;
   height: 84px;
   border-radius: 50%;
-  border: 2px solid var(--stamp);
-  color: var(--stamp);
+  border: 2px solid var(--verified);
+  color: var(--verified);
   display: grid;
   place-items: center;
   text-align: center;
@@ -369,9 +389,16 @@ section{ padding: 88px 0; }
 }
 .ledger-num{
   font-family: var(--font-mono);
-  font-size: 1rem;
-  color: var(--stamp);
-  padding-top: 2px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--ink);
+  background: var(--yellow);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 .ledger-body h3{
   font-size: 1.2rem;
@@ -386,7 +413,7 @@ section{ padding: 88px 0; }
 /* ---------------------------------------------------
    Verify — scan mock
 --------------------------------------------------- */
-.verify{ background: var(--ink); color: var(--paper); }
+.verify{ background: var(--blue-deep); color: var(--paper); }
 .verify h2{ color: var(--white); font-size: clamp(1.7rem, 2.6vw, 2.3rem); max-width: 18ch; }
 .verify .section-lede{ color: var(--muted-on-ink); margin-bottom: 28px; }
 
@@ -414,7 +441,7 @@ section{ padding: 88px 0; }
   position: absolute;
   left: 0; top: 7px;
   width: 12px; height: 12px;
-  border: 1.5px solid var(--stamp);
+  border: 1.5px solid var(--teal);
   background: transparent;
   border-radius: 2px;
 }
@@ -541,7 +568,7 @@ section{ padding: 88px 0; }
    Footer
 --------------------------------------------------- */
 .site-footer{
-  background: var(--ink);
+  background: var(--blue-deep);
   color: var(--muted-on-ink);
   padding: 48px 0;
 }
