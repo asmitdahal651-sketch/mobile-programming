@@ -25,8 +25,7 @@ function result(event)
         return;
     }
 
-    let total = Geography + Physics + Chemistry + English +
-                Nepali + Maths + Programming + Tech;
+    let total = Geography + Physics + Chemistry + English + Nepali + Maths + Programming + Tech;
 
   
 
@@ -39,32 +38,27 @@ function printResult(total)
 
     if (total >= 700)
     {
-        document.getElementById("total").innerHTML =
-            "Total Marks: " + total + "<br>It is Distinction";
+        document.getElementById("total").innerHTML ="Total Marks: " + total + "<br>It is Distinction";
         pass = true;
     }
     else if (total >= 600)
     {
-        document.getElementById("total").innerHTML =
-            "Total Marks: " + total + "<br>It is First Division";
+        document.getElementById("total").innerHTML ="Total Marks: " + total + "<br>It is First Division";
         pass = true;
     }
     else if (total >= 500)
     {
-        document.getElementById("total").innerHTML =
-            "Total Marks: " + total + "<br>It is Second Division";
+        document.getElementById("total").innerHTML ="Total Marks: " + total + "<br>It is Second Division";
         pass = true;
     }
     else if (total >= 400)
     {
-        document.getElementById("total").innerHTML =
-            "Total Marks: " + total + "<br>It is Third Division";
+        document.getElementById("total").innerHTML ="Total Marks: " + total + "<br>It is Third Division";
         pass = true;
     }
     else
     {
-        document.getElementById("total").innerHTML =
-            "Total Marks: " + total + "<br>It is Fail";
+        document.getElementById("total").innerHTML ="Total Marks: " + total + "<br>It is Fail";
         pass = false;
     }
 
