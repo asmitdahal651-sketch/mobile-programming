@@ -28,7 +28,7 @@ function result(event)
     let total = Geography + Physics + Chemistry + English +
                 Nepali + Maths + Programming + Tech;
 
-    console.log(total);
+  
 
     printResult(total);
 }
