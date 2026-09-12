@@ -4,8 +4,8 @@ let loggedIn = false;
 let showBalance = false;
 
 function login() {
-    const enteredPin = Number(prompt("Enter your PIN:"));
-    const message = document.getElementById("login");
+    let enteredPin = Number(prompt("Enter your PIN:"));
+    let message = document.getElementById("login");
 
     loggedIn = enteredPin === pin;
     message.textContent = loggedIn ? "Login Successful" : "Login Failed";
@@ -13,7 +13,7 @@ function login() {
 }
 
 function checkBalance() {
-    const balanceEl = document.getElementById("balance");
+    let balanceEl = document.getElementById("balance");
 
     if (!loggedIn) {
         balanceEl.textContent = "Please login first";
@@ -25,24 +25,24 @@ function checkBalance() {
 }
 
 function getAmount() {
-    const amount = Number(prompt("Enter amount (multiple of 100):"));
+    let amount = Number(prompt("Enter amount (multiple of 100):"));
     return Number.isFinite(amount) && amount > 0 ? amount : null;
 }
 
 function verifyPin() {
-    const enteredPin = Number(prompt("Enter your PIN to confirm:"));
+    let enteredPin = Number(prompt("Enter your PIN to confirm:"));
     return enteredPin === pin;
 }
 
 function withdraw() {
-    const message = document.getElementById("withdrawMessage");
+    let message = document.getElementById("withdrawMessage");
 
     if (!loggedIn) {
         message.textContent = "Please login first";
         return;
     }
 
-    const amount = getAmount();
+    let amount = getAmount();
     if (amount === null) {
         message.textContent = "Enter a valid positive amount";
         return;
@@ -68,14 +68,14 @@ function withdraw() {
 }
 
 function deposit() {
-    const message = document.getElementById("depositMessage");
+    let message = document.getElementById("depositMessage");
 
     if (!loggedIn) {
         message.textContent = "Please login first";
         return;
     }
 
-    const amount = getAmount();
+    let amount = getAmount();
     if (amount === null) {
         message.textContent = "Enter a valid positive amount";
         return;
