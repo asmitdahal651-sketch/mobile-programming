@@ -46,13 +46,7 @@ body {
     box-shadow: 0 30px 60px -25px rgba(0, 0, 0, 0.55);
     opacity: 0;
     transform: translateY(18px);
-    transition: background 0.45s ease, color 0.45s ease;
-}
-
-#card:hover {
-    --bg: var(--forest);
-    --fg: var(--cream);
-    --link: var(--marigold-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #card.is-in {
@@ -113,18 +107,16 @@ body {
     font-family: 'Spectral', serif;
     font-size: clamp(24px, 5vw, 30px);
     font-weight: 600;
-    color: var(--fg);
+    color: inherit;
     line-height: 1.2;
-    transition: color 0.45s ease;
 }
 
 .location {
     margin-top: 8px;
     font-size: 14px;
     font-weight: 500;
-    color: var(--fg);
+    color: inherit;
     opacity: 0.62;
-    transition: color 0.45s ease;
 }
 
 #qrr {
@@ -192,7 +184,6 @@ body {
     opacity: 0.75;
     cursor: pointer;
     padding: 0;
-    transition: color 0.45s ease;
 }
 
 #hide:hover {
