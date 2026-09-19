@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="day2.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="day2.js" defer></script>
+    <title>jQuery Playground</title>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>jQuery Playground</h1>
+        <p class="subtitle">A hands-on demo of DOM manipulation, classes, effects &amp; events</p>
+    </header>
+
+    <main class="layout">
+
+        <aside class="profile-col">
+            <div id="profile-card" class="card">
+                <img id="profile-photo" src="https://picsum.photos/120" alt="Profile photo">
+                <p id="student-name">Aarav Sharma</p>
+                <p id="student-bio">Age: 21 <br> Address: Kathmandu, Nepal</p>
+                <ul id="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>jQuery</li>
+                </ul>
+            </div>
+
+            <div class="output-box">
+                <span class="output-label">Output</span>
+                <p id="output">—</p>
+            </div>
+
+            <div class="input-row">
+                <input type="text" id="nickname-input" placeholder="Type a nickname...">
+            </div>
+        </aside>
+
+        <section class="controls-col">
+
+            <div class="panel">
+                <h2>Get &amp; Set</h2>
+                <div class="btn-row">
+                    <button id="show-name">Show Name</button>
+                    <button id="change-name">Change Name</button>
+                    <button id="show-bio">Show Bio</button>
+                    <button id="get-input">Get Input</button>
+                    <button id="set-input">Set Input</button>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>CSS Classes</h2>
+                <div class="btn-row">
+                    <button id="highlight-card">Highlight Card</button>
+                    <button id="highlight-remove">Remove Highlight</button>
+                    <button id="dark-mode">Toggle Dark Mode</button>
+                    <button id="toggle-rounded">Toggle Rounded</button>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>CSS Method</h2>
+                <div class="btn-row">
+                    <button id="red-bg">Red Background</button>
+                    <button id="reset-bg">Reset Background</button>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>Hide &amp; Show</h2>
+                <div class="btn-row">
+                    <button id="hide-photo">Hide Photo</button>
+                    <button id="show-photo">Show Photo</button>
+                    <button id="toggle-bio">Toggle Bio</button>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>Fade</h2>
+                <div class="btn-row">
+                    <button id="fade-out">Fade Out Card</button>
+                    <button id="fade-in">Fade In Card</button>
+                    <button id="fade-half">Fade to 50%</button>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>Slide</h2>
+                <div class="btn-row">
+                    <button id="slide-up">Slide Up Skills</button>
+                    <button id="slide-down">Slide Down Skills</button>
+                    <button id="slide-toggle">Slide Toggle Skills</button>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>Animate</h2>
+                <div class="btn-row">
+                    <button id="animate-card">Animate Card</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
