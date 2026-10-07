@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTML Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f7fb;
+        color: #222;
+      }
+
+      .container {
+        max-width: 700px;
+        margin: 80px auto;
+        background: #ffffff;
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      h1 {
+        color: #2c3e50;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      button {
+        background: #3498db;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 18px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+
+    <script type="module" src="script.js"></script>
+    <div class="container">
+      <h1>Hello, World!</h1>
+      <p>This is a simple HTML page created for your project.</p>
+      <button type="button" onclick="writeUserData('user1', 'John Doe', 25, 'Male', 'A', 'XYZ School', '123 Main St', '123-456-7890', 'a.com', 'Reading, Traveling', 'Programming, Design')">Add User1</button>
+      <button type="button" onclick="writeUserData('user2', 'Jane Smith', 30, 'Female', 'B', 'ABC School', '456 Elm St', '987-654-3210', 'b.com', 'Cooking, Hiking', 'Marketing, Management')">Add User2</button>
+      <button type="button" onclick="writeUserData('user3', 'Alice Johnson', 28, 'Female', 'A', 'LMN School', '789 Oak St', '555-123-4567', 'c.com', 'Photography, Yoga', 'Finance, Analysis')">Add User3</button>
+      <input type="text" id="userId" placeholder="Enter user ID">
+      <button onclick="readUser(document.getElementById('userId').value)">Read User</button>
+
+    </div>
+  </body>
+</html>
